@@ -174,7 +174,7 @@ const Card = ({
               % Return
             </div>
             <div className='return-value'>
-              {return_value > 0 ? <span style={{color: '#07c407'}}><FaCaretUp /></span> : <span style={{color: 'red'}}><FaCaretDown /></span>}
+              {return_value >= 0 ? <span style={{color: '#07c407'}}><FaCaretUp /></span> : <span style={{color: 'red'}}><FaCaretDown /></span>}
               {return_value}%
             </div>
           </div>
@@ -189,9 +189,7 @@ const Card = ({
           <BorderLinearProgress
             variant="determinate"
             color="secondary"
-            value={((unrealized_PL * 100) / invested_amount).toFixed(
-              2
-            )}
+            value={((unrealized_PL * 100) / invested_amount).toFixed(2)}
           />
         </div>
         </div>

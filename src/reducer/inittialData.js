@@ -68,7 +68,7 @@ export  const INITIAL_DATA = [
       avg_cost: 25.4,
       market_value: 21629,
       percent_portfolio_value: 10.46,
-      unrealized_PL: -1470.22,
+      unrealized_PL: 1470.22,
       return_value: 0.0,
     },
   ]
