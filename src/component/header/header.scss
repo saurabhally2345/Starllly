@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  
+    .nav-icon {
+      cursor: pointer;
+    }
+  }
+  
+  .drawer {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 56px;
+    /* margin-left: -13px; */
+    text-align: center;
+  }
