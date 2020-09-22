@@ -22,6 +22,7 @@ $card-height:80px;
 
   &:first-child {
     padding-top: 0px;
+   
   }
 
   &:last-child {
@@ -34,7 +35,8 @@ $card-height:80px;
     flex-direction: column;
     flex-basis: $section-width;
     padding-right: 10px;
-    background-color: #e6e6e6;
+    background-color: lightgray;
+    padding-top: 10px;
 
     &-price {
       display: flex;
@@ -97,12 +99,13 @@ $card-height:80px;
 
   &-quantity {
     width: $section-width;
-    background-color: #e6e6e6;
+    background-color: lightgray;
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
     flex-direction: column;
     flex-basis: $section-width;
+    padding-top: 10px;
 
     .quantity {
       display: flex;
@@ -130,11 +133,12 @@ $card-height:80px;
   &-market-value {
     display: flex;
     width: $section-width;
-    background-color: #e6e6e6;
+    background-color: lightgray;
     padding-right: 10px;
     padding-left: 10px;
     flex-direction: column;
     flex-basis: $section-width;
+    padding-top: 10px;
 
     .market-value {
       display: flex;
@@ -177,10 +181,11 @@ $card-height:80px;
   &-unrealized {
     display: flex;
     width: $section-width;
-    background-color: #e6e6e6;
+    background-color: lightgray;
     padding-right: 10px;
     padding-left: 10px;
     flex-direction: column;
+    padding-top: 10px;
 
     .unrealized {
       display: flex;
@@ -251,17 +256,13 @@ $card-height:80px;
        flex: 1 0 100%;
        margin-bottom: 5px;
     } 
-    &-quantity {
-      flex: 1 0 100%;
-      margin-bottom: 5px;
-    }
     &-market-value {
       flex: 1 0 100%;
       margin-bottom: 5px;
     }
-    &-unrealized {
-      flex: 1 0 60%; 
-    }  
+    // &-unrealized {
+    //   flex: 1 0 60%; 
+    // }  
     &-button {
       flex: 1 0 4%;  
     }
@@ -270,4 +271,64 @@ $card-height:80px;
   .stock-name {
     padding-left: 30px;
   }
+
+  .card-content-name-section{
+    flex: 0 0 98%;
+    padding:5px;   
+    margin-bottom: 10px;
+  
+  }
+  .card-content-name-section .stock-price{
+    padding-left: 10px;
+  }
+  .card-content-name-section .stock-name {
+    padding-left: 118px;
+  }
+  .card-content-quantity{
+    flex: 0 0 100%;
+    padding:5px;
+    margin-bottom: 10px;  
+  }
+  .card-content-quantity .quantity{
+    padding-left: 1px;
+    margin: 10px;
+  }
+  .card-content-quantity .quantity-value{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card-content-market-value{
+    padding:5px;
+    margin-bottom: 10px;
+  }
+  .card-content-market-value .market-value-val{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+  }
+  .card-content-market-value .portfolio-value-val{
+    display: flex;
+    justify-content: center;
+    padding-left: 81px;
+  }
+    .card-content-unrealized {
+       flex: 1 0 57%;
+       padding:10px;
+       margin-bottom: 10px;
+    }
+
+    
+  .card-content-button {
+    flex: 1 0 20%;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+
+  }
+  .recharts-wrapper{
+    position: relative!important;
+    cursor: default!important;
+    width: 250px!important;
+    height: 199px!important;
+  }
+
 }

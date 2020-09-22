@@ -2,12 +2,12 @@ import React,{ useState, useEffect} from 'react';
 import { PieChart, Pie, Tooltip, Legend, Cell } from "recharts";
 import { Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
 import  './chart.scss';
 
 const useStyles = makeStyles((theme) => ({
   paper : {
-    minHeight: '45%',
+    minHeight: '48%',
+    backgroundColor:'lightgreen'
   }
 }));
 
@@ -36,7 +36,7 @@ const Chart = ({chartData}) => {
   }, [ chartData, etfCell, mfCell ]);
   return (
     <div className='chart'>
-      <Paper elevate={6} className={classes.paper}>
+      <Paper elevate={0} className={classes.paper}>
         <div
           style={{
           display: "flex",
@@ -45,31 +45,34 @@ const Chart = ({chartData}) => {
           padding: "0 14px",
         }}
         >
-        <div className='header'>Portfolio</div>
-        <select className='select'>
-          <option>Asset Wise</option>
+        <div className='header' style={{paddingTop:"10px"}}>Portfolio</div>
+        <div style={{paddingBottom:"10px"}}>
+        <select style={{border:"none", backgroundColor:"lightgreen"}} >
+          <option >Asset Wise</option>
         </select>
         </div>
-      <PieChart width={250} height={200}>
+        </div>
+      <PieChart width={250} height={150}>
         <Pie
           data={chartdata}
           dataKey="value"
           nameKey="name"
           cx="50%"
           cy="50%"
-          innerRadius={60}
-          outerRadius={80}
+          innerRadius={40}
+          outerRadius={60}
           fill="#82ca9d"
         >
           {chartdata.map((entry, index) => (
-            <Cell key={index} fill={entry.color} />
+            <Cell key={index} fill={entry.color} 
+            />
           ))}
         </Pie>
         <Legend
           align="right"
           layout="vertical"
           verticalAlign="middle"
-          height={24}
+          height={124}
         />
         <Tooltip />
       </PieChart>

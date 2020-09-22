@@ -197,10 +197,10 @@ const Card = ({
         </div>
         <div className='card-content-button'>
           <div className={classes.root}>
-            <Button className={classes.button} variant="outlined" color="secondary">
+            <Button className={classes.button} variant="outlined" color="secondary" style={{borderColor:"green",color:"green"}}>
               BUY
             </Button>
-            <Button className={classes.button} variant="outlined" color="secondary">
+            <Button className={classes.button} variant="outlined" color="secondary" style={{borderColor:"red"}}>
               SELL
             </Button>
           </div>

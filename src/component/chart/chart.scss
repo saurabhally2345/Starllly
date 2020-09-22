@@ -1,4 +1,7 @@
-
+.makeStyles-paper-16{
+  min-height: 48%;
+  background-color: lightgreen;
+}
 .chart {
     width: 20%;
     padding: 0px 10px;
@@ -10,7 +13,7 @@
       padding: 8px 0 0 8px;
       margin: 4px;
       width: 80%;
-      background-color: #f2f2f2;
+      background-color: red;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     
       .header {
@@ -22,11 +25,11 @@
       }
     
       .select {
-        font-size: 1.2rem;
+        font-size: .5rem;
         font-weight: 400;
         color: #000000;
         background: transparent;
-        border: none;
+        border: none !important;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -44,7 +47,8 @@
       flex: 1 0 20%;
     }
     .recharts-legend-wrapper {
-      top: 125px !important;
-      right: -77px !important;
+      top: 100px !important;
+      right: -60px !important;
+
     }
   }
